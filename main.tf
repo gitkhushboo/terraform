@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 resource "null_resource" "example" {
   provisioner "local-exec" {
@@ -13,3 +14,15 @@ resource "null_resource" "example" {
   }
 }
 
+=======
+module "a1" {
+  source = "./config"
+  f1s    = "xyz.txt"
+  r1s    = 10
+}
+module "a2" {
+  source = "./config"
+  f1s    = "klm.txt"
+  r1s    = 30
+}
+>>>>>>> aaee57ae6e70e04b2be8067a2a1f8096b96ffbb4
